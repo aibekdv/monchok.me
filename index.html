@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./fonts/OpenSans/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/styles.min.css" />
+    <link rel="stylesheet" href="./css/response.min.css" />
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- scrol btn from bottom to top -->
+    <div class="scrollBtn"></div>
+
+    <!-- МЕНЮ -->
+    <div class="page_wrapper">
+        <div class="page_wrapper_header">
+            <div class="container">
+                <header class="page_header">
+                    <div class="telephone">
+                        <div class="menu_mobile"><a class="fas fa-bars"></a></div>
+                        <a href="tel:996775360777" class="fas fa-phone-alt "></a>&nbsp;
+                        <span>+996 775 360 777</span>
+                    </div>
+                    <div class="logo">
+                       <a href="index.html"><img src="./img/icons/logo.gif" alt="" /></a> 
+                    </div>
+                    <div class="page_left_menu">
+                        <a href="cart.html">
+                            <i class="fa fa-shopping-cart "><span></span></i>
+                        </a>
+                        <a class="search_top">
+                            <i class="fa fa-search "></i>
+                        </a>
+                    </div>
+                </header>
+                <div class="menu_header">
+                    <div class="menu_header_top"><i class="fas fa-times"></i></div>
+                    <ul>
+                        <li><a href="">Главная</a></li>
+                        <li class="dropdown">
+                            <a class="dropbtn">Категории <i class="fas fa-caret-down"></i></a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <div class="container">
+                                    <a href="#">ОЖЕРЕЛЬЯ</a>
+                                    <a href="#">КОЛЬЦА</a>
+                                    <a href="#">БРАСЛЕТЫ</a>
+                                    <a href="#">Серьги</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">О компани</a></li>
+                    </ul>
+                    <div class="help_me">
+                        <a href="tel: +996775360777"><i class="fas fa-phone-alt"></i>+996 775 360 777</a>
+                        <a href="#"><i class="fab fa-whatsapp soc"></i>+996 775 360 777</a>
+                    </div>
+                </div>
+                <div class="search_block">
+                    <div class="container">
+                        <form>
+                            <input type="text" placeholder="Введите что то...." />
+                            <button class="search_btn"><i class="fa fa-search"></i></button>
+                            <button class="cancel_search_btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- СЛАЙДЕР -->
+    <div class="slider-swiper">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/slider/home-lucky-move-color-pm-slider.jpg" alt="" />
+                    <div class="text_content">
+                        <div class="container">
+                            <h1>Цвет удачного хода</h1>
+                            <p>ОТКРОЙТЕ ДЛЯ СЕБЯ новые драгоценности</p>
+                            <button class="btn btn_open">ОТКРЫТЬ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/slider/messika-my-move-slider-rose-2.jpg" alt="" />
+                    <div class="text_content">
+                        <div class="container">
+                            <h1>МОЙ ХОД</h1>
+                            <p>ОТКРОЙТЕ ДЛЯ СЕБЯ ПОСЛЕДНЮЮ КОЛЛЕКЦИЮ</p>
+                            <button class="btn btn_open">ОТКРЫТЬ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- ФОКУС -->
+
+    <section class="focus">
+        <div class="container">
+            <h3>ФОКУС</h3>
+            <div class="focus_content">
+                <div class="focus_item">
+                    <a href="#">
+                        <div class="focus_img_wrapper">
+                            <img src="./img/slider/focus-1.jpg" alt="">
+                        </div>
+                        <div class="focus_text_wrapper">
+                            <h2>ОЖЕРЕЛЬЯ</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="focus_item">
+                    <a href="#">
+                        <div class="focus_img_wrapper">
+                            <img src="./img/slider/focus-2.jpg" alt="">
+                        </div>
+                        <div class="focus_text_wrapper">
+                            <h2>КОЛЬЦА</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="focus_item">
+                    <a href="#">
+                        <div class="focus_img_wrapper">
+                            <img src="./img/slider/focus-3.jpg" alt="">
+                        </div>
+                        <div class="focus_text_wrapper">
+                            <h2>БРАСЛЕТЫ</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ДЛЯ ВАС -->
+
+
+
+    <!-- НАШИ АДРЕСС -->
+
+    <section class="map">
+        <div class="container">
+            <h3 style="text-align: center; margin: 20px 0px; font-family: Open sans;">НАШИ АДРЕС</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d536.0095999391981!2d72.80366797788898!3d40.53875710581738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdac01ce44614d%3A0xd3ad4ab952424d2a!2z0KDQsNC80LDQt9Cw0L0!5e0!3m2!1sru!2skg!4v1624908961041!5m2!1sru!2skg"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="help">
+                <h3>ПОДПИСЫВАЙТЕСЬ НА НАС</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-whatsapp soc"></i>+996 775 360 777</a></li>
+                    <li><a href="#"><i class="fab fa-telegram soc"></i>+996 775 360 777</a></li>
+                    <li><a href="#"><i class="fab fa-instagram soc"></i>monchok.me</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Категории</h3>
+                <ul>
+                    <li><a href="#">ОЖЕРЕЛЬЯ</a></li>
+                    <li><a href="#">БРАСЛЕТЫ</a></li>
+                    <li><a href="#">Серьги</a></li>
+                    <li><a href="#">КОЛЬЦА</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Меню сайта</h3>
+                <ul>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О компани</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-2.1.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
