@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
+    <title>Monchok.me - интернет магазин</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="./fonts/OpenSans/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/styles.min.css" />
     <link rel="stylesheet" href="./css/response.min.css" />
 </head>
 
 <body>
-    <!-- loader -->
-    <div class="loader">
-        <div class="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- scrol btn from bottom to top -->
-    <div class="scrollBtn"></div>
 
     <!-- МЕНЮ -->
     <div class="page_wrapper">
@@ -35,11 +23,11 @@
                 <header class="page_header">
                     <div class="telephone">
                         <div class="menu_mobile"><a class="fas fa-bars"></a></div>
-                        <a href="tel:996775360777" class="fas fa-phone-alt "></a>&nbsp;
-                        <span>+996 775 360 777</span>
+                        <a href="tel:996775360777" class="fas fa-phone-alt ">&nbsp;
+                        <span >+996 775 360 777</span></a>
                     </div>
                     <div class="logo">
-                       <a href="index.html"><img src="./img/icons/logo.gif" alt="" /></a> 
+                        <a href="index.html"><img src="./img/icons/logo.gif" alt="" /></a>
                     </div>
                     <div class="page_left_menu">
                         <a href="cart.html">
@@ -53,20 +41,20 @@
                 <div class="menu_header">
                     <div class="menu_header_top"><i class="fas fa-times"></i></div>
                     <ul>
-                        <li><a href="">Главная</a></li>
+                        <li><a href="index.html">Главная</a></li>
                         <li class="dropdown">
                             <a class="dropbtn">Категории <i class="fas fa-caret-down"></i></a>
                             <div id="myDropdown" class="dropdown-content">
                                 <div class="container">
-                                    <a href="#">ОЖЕРЕЛЬЯ</a>
-                                    <a href="#">КОЛЬЦА</a>
-                                    <a href="#">БРАСЛЕТЫ</a>
-                                    <a href="#">Серьги</a>
+                                    <a href="jewelry.html">ОЖЕРЕЛЬЯ</a>
+                                    <a href="ring.html">КОЛЬЦА</a>
+                                    <a href="bracelet.html">БРАСЛЕТЫ</a>
+                                    <a href="earrings.html">Серьги</a>
                                 </div>
                             </div>
                         </li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">О компани</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="about.html">О компани</a></li>
                     </ul>
                     <div class="help_me">
                         <a href="tel: +996775360777"><i class="fas fa-phone-alt"></i>+996 775 360 777</a>
@@ -87,7 +75,6 @@
             </div>
         </div>
     </div>
-
 <!-- order -->
 <section class="order">
     <div class="container">
@@ -107,41 +94,83 @@
 
 
 
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <div class="help">
-                    <h3>ПОДПИСЫВАЙТЕСЬ НА НАС</h3>
-                    <ul>
-                        <li><a href="#"><i class="fab fa-whatsapp soc"></i>+996 775 360 777</a></li>
-                        <li><a href="#"><i class="fab fa-telegram soc"></i>+996 775 360 777</a></li>
-                        <li><a href="#"><i class="fab fa-instagram soc"></i>monchok.me</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Категории</h3>
-                    <ul>
-                        <li><a href="#">ОЖЕРЕЛЬЯ</a></li>
-                        <li><a href="#">БРАСЛЕТЫ</a></li>
-                        <li><a href="#">Серьги</a></li>
-                        <li><a href="#">КОЛЬЦА</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Меню сайта</h3>
-                    <ul>
-                        <li><a href="#">Услуги</a></li>
-                        <li><a href="#">О компани</a></li>
-                    </ul>
-                </div>
+   <!-- ПРЕИМУЩЕСТВО ЭЛЕКТРОННОГО БУТИКА -->
+   <section class="advantages">
+    <div class="container">
+        <h1 class="text_title">преимущество электронного бутика</h1>
+        <div class="advantages__items">
+            <div class="advantages__item">
+                <img class="advantages_icons" src="./img/icons/return.svg" alt="">
+                <p class="advantages_text">Бесплатный возврат</p>
+                <p class="advantages_inlinetext"> Бесплатный возврат в течение <br>
+                    <b>14</b> дней для любова заказа
+                </p>
             </div>
-        </footer>
-    
-    
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="./js/jquery-2.1.3.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
-        <script src="./js/index.js"></script>
-    </body>
-    
-    </html>
+            <div class="advantages__item">
+                <img class="advantages_icons" src="./img/icons/delivery.svg" alt="">
+                <p class="advantages_text">Бесплатный доставка</p>
+                <p class="advantages_inlinetext"><b>Monchok.mi</b> предлагает доставка <br>
+                    при покупке на сумму более <br>
+                    <b>1000сомов</b> <br>
+                </p>
+            </div>
+            <div class="advantages__item">
+                <img class="advantages_icons" src="./img/icons/gift-solid.svg" alt="">
+                <p class="advantages_text">искусство дарить</p>
+                <p>Ваш заказ <b>Monchok.mi</b> <br>
+                    сублимирован в уникальной <br>
+                    каробке <b>Monchok.mi</b></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- НАШИ АДРЕСС -->
+
+<section class="map">
+    <div class="container">
+        <h3 class="text_title">НАШИ АДРЕС</h3> <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d536.0095999391981!2d72.80366797788898!3d40.53875710581738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bdac01ce44614d%3A0xd3ad4ab952424d2a!2z0KDQsNC80LDQt9Cw0L0!5e0!3m2!1sru!2skg!4v1624908961041!5m2!1sru!2skg"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="container">
+        <div class="help">
+            <h3>ПОДПИСЫВАЙТЕСЬ НА НАС</h3>
+            <ul>
+                <li><a href="#"><i class="fab fa-whatsapp soc"></i>+996 775 360 777</a></li>
+                <li><a href="#"><i class="fab fa-telegram soc"></i>+996 775 360 777</a></li>
+                <li><a href="#"><i class="fab fa-instagram soc"></i>monchok.me</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Категории</h3>
+            <ul>
+                <li><a href="jewelry.html">ОЖЕРЕЛЬЯ</a></li>
+                <li><a href="bracelet.html">БРАСЛЕТЫ</a></li>
+                <li><a href="earrings.html">Серьги</a></li>
+                <li><a href="ring.html">КОЛЬЦА</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Меню сайта</h3>
+            <ul>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О компани</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+
+</html>
