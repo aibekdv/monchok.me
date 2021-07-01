@@ -32,17 +32,17 @@ const sliderProducts = new Swiper('.for_you .swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  breakpoints:{
-    1300:{
-      slidesPerView:4
+  breakpoints: {
+    1300: {
+      slidesPerView: 4
     },
-    990:{
+    990: {
       slidesPerView: 3,
     },
-    550:{
+    550: {
       slidesPerView: 2,
     },
-    320:{
+    0: {
       slidesPerView: 1,
     },
   }
@@ -59,6 +59,22 @@ document.querySelector(".cancel_search_btn").addEventListener("click", (e) => {
   document.querySelector(".search_block").style.display = "none";
   document.querySelector("header").style.display = "flex";
 });
+
+// colorProductItem
+let productItemColor = document.querySelectorAll('.productItemColor button'),
+  productItemImg = document.querySelectorAll('.img_wrapper_item img');
+
+for (let i = 0; i < productItemColor.length; i++) {
+  const element = productItemColor[i];
+  element.addEventListener('click', function(){
+    for (let j = 0; j < productItemImg.length; j++) {
+      const element = productItemImg[j];
+      console.log(element);
+      
+    }
+  })
+
+}
 
 $(document).ready(() => {
   $(".page_wrapper_header").hover(function () {
@@ -99,20 +115,20 @@ $(document).ready(() => {
 
   $(".menu_mobile").click(() => {
     $(".menu_header").toggle(() => {
-        $(".menu_header").css(
-            { borderBottomLeftRadius: "5px" },
-            { display: "flex" }
-        );
+      $(".menu_header").css(
+        { borderBottomLeftRadius: "5px" },
+        { display: "flex" }
+      );
     });
-        $('.help_me').css({display:"flex"})
-        $(".menu_header_top").css({ display: "flex" });
-});
+    $('.help_me').css({ display: "flex" })
+    $(".menu_header_top").css({ display: "flex" });
+  });
 
-$(".menu_header_top i").click(() => {
+  $(".menu_header_top i").click(() => {
     if ($(window).width() < 768) {
-        $(".menu_header").css({ display: "none" });
-        $(".menu_header").css({ borderBottomLeftRadius: "0px" });
-        $(".menu_header_top").css({ display: "none" });
+      $(".menu_header").css({ display: "none" });
+      $(".menu_header").css({ borderBottomLeftRadius: "0px" });
+      $(".menu_header_top").css({ display: "none" });
     }
-});
+  });
 });

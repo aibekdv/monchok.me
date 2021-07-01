@@ -156,7 +156,9 @@
       }
     }
   }
-
+  .top_caregory_block{
+    height: 200px;
+  }
   .page_product {
     padding: 60px 0px;
     .container {
@@ -230,6 +232,13 @@
     .swiper-button-prev,.swiper-button-next{
       display: none;
     }
+  }
+  .services{
+    padding: 0;
+    padding-top: 60px;
+  }
+  .about{
+    padding-top: 60px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -306,6 +315,9 @@
       }
     }
   }
+  .top_caregory_block{
+    height: 160px;
+  }
 
   footer {
     .container {
@@ -328,6 +340,12 @@
   .telephone {
     .menu_mobile {
       margin-right: 15px;
+    }
+  }
+  .top_caregory_block{
+    height: 130px;
+    .titleTopCategory{
+      font-size: 24px;
     }
   }
   .order {
