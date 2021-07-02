@@ -30,8 +30,9 @@
                         <a href="index.html"><img src="./img/icons/logo.gif" alt="" /></a>
                     </div>
                     <div class="page_left_menu">
-                        <a href="cart.html">
-                            <i class="fa fa-shopping-cart "><span></span></i>
+                        <a href="cart.html" class="top_header_cart">
+                            <i class="fa fa-shopping-cart "></i>
+                            <span>9</span>
                         </a>
                         <a class="search_top">
                             <i class="fa fa-search "></i>
@@ -50,6 +51,7 @@
                                     <a href="ring.html">КОЛЬЦА</a>
                                     <a href="bracelet.html">БРАСЛЕТЫ</a>
                                     <a href="earrings.html">Серьги</a>
+                                    <a href="accesuar.html">Аксессуары</a>
                                 </div>
                             </div>
                         </li>
@@ -84,20 +86,97 @@
     <!-- category jewelry -->
     <section class="category">
         <div class="container">
+            <!-- Фильтер -->
+            <div class="filter">
+                <div class="container">
+                    <div class="filter_show"><span>Фильтер</span>  <i class="fas fa-chevron-down"></i></div>
+                    <form>
+                        <div class="form_control">
+                            <div>
+                                <h4>Цена</h4>
+                                <input type="text" placeholder="Цена от">
+                                <input type="text" placeholder="Цена до">                            
+                            </div>
+
+                            <div>
+                            <h4>Цвет</h4>
+                            <select name="colors">
+                                <option value="gold">Золоте</option>
+                                <option value="roz">Розовые</option>
+                            </select>                            
+                            </div>
+
+                            <div>
+                                <h4>Металь</h4>
+                                <select name="metals">
+                                    <option value="gold">Золото</option>
+                                    <option value="roz">Серебро</option>
+                                    <option value="roz">Стал</option>
+                                </select>                            
+                            </div>                            
+                        </div>
+
+                        <div class="btn_submit_filter">
+                            <button type="submit">Применить</button>
+                        </div>
+                        
+                    </form>
+
+                </div>
+            </div>
+            <!-- link category -->
             <div class="top_text-prod">
                 <ul>
                     <li><a href="index.html">Главная</a> </li>
                     <li><a href="#">ОЖЕРЕЛЬЯ</a> </li>
                 </ul>
             </div>
+            <!-- Products -->
             <div class="product_items">
                 <div class="product__item">
                     <div class="img_wrapper_item">
-                        <img src="./img/products/bracelet-diamant-or-jaune-lucky-eye-pave-10035_1.jpg"
-                            alt="">
+                        <a href="product.html">
+                            <img src="./img/products/bracelet-diamant-or-jaune-lucky-eye-pave-10035_1.jpg" alt="">
+                        </a>
                     </div>
                     <div class="about__text_content">
-                        <b><a href="#">Lucky Move PM Malachite Ring</a> </b>
+                        <b><a href="product.html">Lucky Move PM Malachite Ring</a> </b>
+                        <p class="price">1200сом</p>
+                        <div class="productItemColor">3 ЦВЕТ</div>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <div class="img_wrapper_item">
+                        <a href="product.html">
+                            <img src="./img/products/bracelet-diamant-or-jaune-lucky-eye-pave-10035_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="about__text_content">
+                        <b><a href="product.html">Lucky Move PM Malachite Ring</a> </b>
+                        <p class="price">1200сом</p>
+                        <div class="productItemColor">3 ЦВЕТ</div>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <div class="img_wrapper_item">
+                        <a href="product.html">
+                            <img src="./img/products/bracelet-diamant-or-jaune-lucky-eye-pave-10035_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="about__text_content">
+                        <b><a href="product.html">Lucky Move PM Malachite Ring</a> </b>
+                        <p class="price">1200сом</p>
+                        <div class="productItemColor">3 ЦВЕТ</div>
+                    </div>
+                </div>
+                <div class="product__item">
+                    <div class="img_wrapper_item">
+                        <a href="product.html">
+                            <img src="./img/products/bracelet-diamant-or-jaune-lucky-eye-pave-10035_1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="about__text_content">
+                        <b><a href="product.html">Lucky Move PM Malachite Ring</a> </b>
                         <p class="price">1200сом</p>
                         <div class="productItemColor">3 ЦВЕТ</div>
                     </div>

@@ -38,14 +38,30 @@
   .focus {
     &_content {
       flex-wrap: wrap;
+      .focus_item{
+        img{
+          max-width: 190px;
+        }
+        .focus_text_wrapper{
+          h2{
+            font-size: 16px;
+          }
+        }
+      }
     }
   }
-  .reviews {
-    .swiper-button-next {
-      right: 5%;
+  .sales{
+    .container{
+      width: 100%;
     }
-    .swiper-button-prev {
-      left: 5%;
+    .swiper-container{
+      .swiper-wrapper{
+        .swiper-slide{
+          img{
+            max-width: 100%;
+          }
+        }
+      }
     }
   }
 }
@@ -159,6 +175,23 @@
   .top_caregory_block{
     height: 200px;
   }
+
+  .reviews {
+    .swiper-container{
+      .swiper-wrapper{
+        .swiper-slide{
+          .review{
+            img{
+              max-width: 100%;
+            }            
+          }
+        }
+      }
+      .swiper-button-next,   .swiper-button-prev{
+        display: none;
+      }
+    }
+  }
   .page_product {
     padding: 60px 0px;
     .container {
@@ -210,24 +243,6 @@
       }
     }
   }
-  .reviews {
-    .review {
-      width: 70%;
-      .review_header {
-        div {
-          h3 {
-            font-size: 16px;
-          }
-          p {
-            font-size: 14px;
-          }
-        }
-      }
-      .review_content {
-        font-size: 14px;
-      }
-    }
-  }
   .for_you{
     .swiper-button-prev,.swiper-button-next{
       display: none;
@@ -239,6 +254,19 @@
   }
   .about{
     padding-top: 60px;
+  }
+  .filter{
+    &_show{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      span{
+        margin-right: 5px;
+      }
+    }
+    form{
+      padding-top: 10px;
+    }
   }
 }
 @media screen and (max-width: 576px) {
@@ -268,6 +296,36 @@
       }
     }
   }
+  .for_you{
+    .swiper-slide{
+      width: 50%;
+    }
+    .product__item{
+      max-width: none;
+    }
+  }
+  .product__item{
+    .img_wrapper_item{
+      img{
+        max-width: 140px;
+      }
+    }
+    .about__text_content{
+      font-size: 12px;
+    }
+  }
+  .sales{
+    .swiper-container{
+      padding-top: 10px;
+      .swiper-wrapper{
+        .swiper-slide{
+          img{
+            max-width: 100%;
+          }
+        }
+      }
+    }    
+    }
   .cart {
     .container {
       min-height: auto !important;
@@ -318,6 +376,16 @@
   .top_caregory_block{
     height: 160px;
   }
+  .focus {
+    &_content {
+      flex-wrap: wrap;
+      .focus_item{
+        img{
+          max-width: 140px;
+        }
+      }
+    }
+  }
 
   footer {
     .container {
@@ -363,15 +431,62 @@
       }
     }
   }
-  .reviews {
-    .swiper-button-next,
-    .swiper-button-prev {
-      display: none;
+  .focus {
+    padding: 15px 0px;
+    h3{
+      font-size: 20px;
+    }
+    &_content {
+    padding: 15px 0px;
+      .focus_item{
+        margin: 5px 10px;
+        .focus_text_wrapper{
+          h2{
+            font-size: 14px;
+          }
+        }
+        img{
+          max-width: 130px;
+        }
+      }
+    }
+  }
+  .filter{
+    .container{
+
+      form{
+        .form_control{
+          input{
+            font-size: 14px;
+            height: 20px;
+            width: 100%;
+            margin: 5px 0px;
+          }        
+          select{
+            height: 20px;
+            font-size: 14px;
+          }
+          h4{
+            font-weight: normal;
+          }
+        }
+      }
     }
   }
   footer{
     h3{
       font-size: 17px;
+    }
+  }
+  .product__item{
+    max-width: 50%;
+    .img_wrapper_item{
+      img{
+        max-width: 120px;
+      }
+    }
+    .about__text_content{
+      font-size: 12px;
     }
   }
 }
@@ -387,8 +502,28 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 220px) and (max-width: 340px) {
   .container {
     width: 280px;
+  }
+  .focus {
+    padding: 15px 0px;
+    h3{
+      font-size: 18px;
+    }
+    &_content {
+    padding: 15px 0px;
+      .focus_item{
+        margin: 5px 10px;
+        .focus_text_wrapper{
+          h2{
+            font-size: 13px;
+          }
+        }
+        img{
+          max-width: 110px;
+        }
+      }
+    }
   }
 }

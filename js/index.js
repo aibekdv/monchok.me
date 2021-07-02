@@ -1,3 +1,4 @@
+// slider top
 let swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -8,6 +9,7 @@ let swiper = new Swiper(".mySwiper", {
     delay: 5000,
   },
 });
+// slider reviews
 const swiperReviews = new Swiper('.reviews .swiper-container', {
   direction: 'horizontal',
   loop: true,
@@ -20,30 +22,53 @@ const swiperReviews = new Swiper('.reviews .swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
-const sliderProducts = new Swiper('.for_you .swiper-container', {
-  direction: 'horizontal',
+// slider sales
+const sliderSales = new Swiper('.sales .swiper-container', {
+  direction: 'vertical',
   loop: true,
-  slidesPerView: 4,
+  autoplay: {
+    delay: 5000,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    590:{
+      direction: 'vertical',
+    },
+    320:{
+      direction: 'horizontal',
+    }
+  }
+
+});
+// slider product
+const sliderProducts = new Swiper('.for_you .swiper-container', {
+  direction: 'horizontal',
+  loop: true,
+  pagination: {
+    el: '.for_you .swiper-pagination',
+    clickable: true,
+    dynamicBullets: true,
   },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
-    1300: {
-      slidesPerView: 4
+    1400:{
+      slidesPerView:5
     },
     990: {
+      slidesPerView:4,
+    },
+    770: {
       slidesPerView: 3,
     },
-    550: {
+    320: {
       slidesPerView: 2,
-    },
-    0: {
-      slidesPerView: 1,
     },
   }
 });
@@ -60,21 +85,6 @@ document.querySelector(".cancel_search_btn").addEventListener("click", (e) => {
   document.querySelector("header").style.display = "flex";
 });
 
-// colorProductItem
-let productItemColor = document.querySelectorAll('.productItemColor button'),
-  productItemImg = document.querySelectorAll('.img_wrapper_item img');
-
-for (let i = 0; i < productItemColor.length; i++) {
-  const element = productItemColor[i];
-  element.addEventListener('click', function(){
-    for (let j = 0; j < productItemImg.length; j++) {
-      const element = productItemImg[j];
-      console.log(element);
-      
-    }
-  })
-
-}
 
 $(document).ready(() => {
   $(".page_wrapper_header").hover(function () {
@@ -131,4 +141,10 @@ $(document).ready(() => {
       $(".menu_header_top").css({ display: "none" });
     }
   });
+
+  $('.filter_show').click(function(){
+    $('.filter form').toggle()
+    $('.filter_show i').toggleClass('fa-chevron-up')
+    $('.filter_show i').toggleClass('fa-chevron-down')
+  })
 });
