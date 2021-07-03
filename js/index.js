@@ -142,7 +142,7 @@ $(document).ready(() => {
     }
   });
 
-  $('.filter_show').click(function(){
+  $('.filter_show div').click(function(){
     $('.filter form').toggle()
     $('.filter_show i').toggleClass('fa-chevron-up')
     $('.filter_show i').toggleClass('fa-chevron-down')
