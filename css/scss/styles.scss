@@ -11,6 +11,10 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 
 .container {
   width: 1140px;
@@ -950,5 +954,31 @@ footer {
   }
   .text_content {
     font-size: 18px;
+  }
+}
+.subscribe{
+  padding: 20px 0px;
+        font-size: 17px;
+        font-family: Open sans;
+  .container{
+    form{
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+      input{
+        width: 300px;
+        height: 35px;
+        padding-left: 7px;
+        outline: 0px;
+        margin-right: 10px;
+        font-size: 17px;
+      }
+      .btn_cart{
+        padding: 0;
+        width: 160px;
+        padding: 5px ;
+        margin: 0;
+      }
+    }
   }
 }

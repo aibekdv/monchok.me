@@ -1,3 +1,4 @@
+"use strict";
 // slider top
 let swiper = new Swiper(".mySwiper", {
   pagination: {
