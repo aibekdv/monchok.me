@@ -300,6 +300,9 @@
     .swiper-slide{
       width: 50%;
     }
+    .swiper-container{
+      min-height: fit-content;
+    }
     .product__item{
       max-width: none;
     }

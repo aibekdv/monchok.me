@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => {
   // slider top
   let swiper = new Swiper(".mySwiper", {
     pagination: {
