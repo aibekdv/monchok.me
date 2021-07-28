@@ -4,6 +4,11 @@ window.addEventListener('DOMContentLoaded', () => {
     pagination: {
       el: ".swiper-pagination",
       dynamicBullets: true,
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.mySwiper .swiper-button-next',
+      prevEl: '.mySwiper .swiper-button-prev',
     },
     loop: true,
     autoplay: {
@@ -149,5 +154,51 @@ window.addEventListener('DOMContentLoaded', () => {
       $('.filter_show i').toggleClass('fa-chevron-down')
     })
   });
+
+
+  // render product
+    async function getProducts(url, idBlock){
+     await fetch(url)
+      .then(response =>  response.json())
+      .then(response => {
+        response.forEach(element => {
+          try{
+            document.querySelector(idBlock).insertAdjacentHTML('afterbegin', renderProduct(element))
+          }catch(e){}
+          
+        });
+      })
+      .catch(e => console.log(e))
+    }
+    
+    function renderProduct(item){
+      return `
+      <div class="product__item">
+        <div class="img_wrapper_item">
+            <a href="${item.product_url}">
+                <img src="${item.image}" alt="">
+            </a>
+        </div>
+        <div class="about__text_content">
+            <b><a href="${item.product_url}">${item.name}</a> </b>
+            <p class="price">${item.price}сом</p>
+        </div>
+      </div>
+      `
+    }
+    // render ring
+    getProducts('../products/ring.json', '.ring' )
+
+    //render jewelry 
+    getProducts('../products/jewelry.json', '#jewelry' )  
+    
+    //render earrings
+    getProducts('../products/earrings.json', '#earrings')
+
+    //render accessuar
+    getProducts('../products/accessuar.json', '#accesuar')
+
+    //render bracelet
+    getProducts('../products/barcelet.json', '#bracelet')
 
 })

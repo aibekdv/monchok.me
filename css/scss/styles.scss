@@ -96,6 +96,10 @@ input::-webkit-inner-spin-button {
     position: relative;
     height: 88vh;
     font-family: "Open Sans";
+    .swiper-button-next::after,
+    .swiper-button-prev:after{
+      color:white;
+    }
   }
   .swiper-container {
     width: 100%;
