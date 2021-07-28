@@ -188,19 +188,19 @@ window.addEventListener('DOMContentLoaded', () => {
         `
       }
       // render ring
-      getProducts('./../products/ring.json', '.ring' )
+      getProducts('./products/ring.json', '.ring' )
 
       //render jewelry 
-      getProducts('./../products/jewelry.json', '#jewelry' )  
+      getProducts('./products/jewelry.json', '#jewelry' )  
       
       //render earrings
-      getProducts('../products/earrings.json', '#earrings')
+      getProducts('./products/earrings.json', '#earrings')
 
       //render accessuar
-      getProducts('./../products/accessuar.json', '#accesuar')
+      getProducts('./products/accessuar.json', '#accesuar')
 
       //render bracelet
-      getProducts('./../products/barcelet.json', '#bracelet')    
+      getProducts('./products/barcelet.json', '#bracelet')    
   } catch (error) {
     
   }
