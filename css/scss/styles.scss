@@ -784,15 +784,16 @@ footer {
   font-family: Open sans;
 }
 .product_items {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap:10px;
+  justify-content: space-evenly;
+  justify-items:stretch;
   padding: 30px 0px;
-  flex-wrap: wrap;
-  justify-content: space-around;
 }
 .product__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   margin: 5px 0px;
   font-family: Open sans;
   .img_wrapper_item {
@@ -815,8 +816,12 @@ footer {
   .about__text_content {
     margin-top: 10px;
     text-align: center;
+    word-wrap: break-word;
     a:hover {
       text-decoration: underline;
+    }
+    .price{
+      padding: 5px 0px;
     }
   }
 }
